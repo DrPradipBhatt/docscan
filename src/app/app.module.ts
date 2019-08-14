@@ -9,6 +9,14 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { File } from '@ionic-native/file/ngx';
+
+import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
+import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
+import { ImageResizer } from '@ionic-native/image-resizer/ngx';
+import { DocumentScanner} from '@ionic-native/document-scanner/ngx';
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -16,6 +24,12 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
+    File ,
+    PhotoViewer , 
+    DocumentViewer ,
+    ImageResizer , 
+    DocumentScanner , 
+     
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
